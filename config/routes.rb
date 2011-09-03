@@ -1,4 +1,6 @@
 Adventur::Application.routes.draw do
+  resources :scenes
+
   match "/welcome" => "welcome#index"
 
   root :to => "welcome#index"

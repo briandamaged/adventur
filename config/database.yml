@@ -24,8 +24,8 @@ test:
   reconnect: false
   database: adventur_test
   pool: 5
-  username: root
-  password:
+  username: adv_test
+  password: yankeecandlecompany
   host: localhost
 
 production:
@@ -34,6 +34,6 @@ production:
   reconnect: false
   database: adventur_production
   pool: 5
-  username: root
-  password:
+  username: adv_prod
+  password: yankeecandlecompany
   host: localhost
