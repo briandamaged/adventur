@@ -1,7 +1,7 @@
 Adventur::Application.routes.draw do
-  get "welcome/welcome"
+  match "/welcome" => "welcome#index"
 
-  root :to => "welcome#welcome"
+  root :to => "welcome#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
