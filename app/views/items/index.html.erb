@@ -7,15 +7,13 @@
     <th>Image</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
 
 <% @items.each do |item| %>
   <tr>
     <td><%= item.name %></td>
     <td><%= item.description %></td>
-    <td><%= image_tag item.image.url(:thumb) %></td>
-    <td><%= link_to 'Show', item %></td>
+    <td><%= link_to image_tag(item.image.url(:thumb)), item %></td>
     <td><%= link_to 'Edit', edit_item_path(item) %></td>
     <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>

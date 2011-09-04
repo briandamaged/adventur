@@ -7,15 +7,13 @@
     <th>Image</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
 
 <% @scenes.each do |scene| %>
   <tr>
     <td><%= scene.name %></td>
     <td><%= scene.description %></td>
-    <td><%= image_tag scene.image.url(:thumb) %></td>
-    <td><%= link_to 'Show', scene %></td>
+    <td><%= link_to image_tag(scene.image.url(:thumb)), scene %></td>
     <td><%= link_to 'Edit', edit_scene_path(scene) %></td>
     <td><%= link_to 'Destroy', scene, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>

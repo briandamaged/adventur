@@ -13,15 +13,18 @@ body, p, ol, ul, td {
 
 
 header {
-  background-color: #a87;
+  background-color: #900;
   padding: 2px 2px 2px 2px;
+  color: #fff;
 }
+
+
 
 
 
 nav a, nav a:link, nav a:visited {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 
@@ -114,3 +117,20 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+
+
+section#scene {
+  float: right;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 10px 0px 10px;
+  border-style: dotted;
+  border-width: 2px;
+  border-color: black;
+}
+
+
+
+
+
+

@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
+<section id="scene" >
+  <%= image_tag @scene.image.url(:in_game) %>
+</section>
+
+<h1>
   <%= @scene.name %>
-</p>
+</h1>
 
 <p>
   <b>Description:</b>
   <%= @scene.description %>
 </p>
 
-<p>
-  <b>Image:</b>
-  <%= image_tag @scene.image.url(:in_game) %>
-</p>
+
 
 
 <%= link_to 'Edit', edit_scene_path(@scene) %> |
