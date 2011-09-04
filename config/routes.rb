@@ -1,9 +1,15 @@
 Adventur::Application.routes.draw do
   resources :items
-
   resources :scenes
+  resources :users
+  resources :sessions
 
-  match "/welcome" => "welcome#index", :as => "welcome"
+  get "/sign_up" => "users#new",     :as => "sign_up"
+  
+  get "/log_in"  => "sessions#new",     :as => "log_in"
+  get "/log_out" => "sessions#destroy", :as => "log_out"
+  
+  get "/welcome" => "welcome#index", :as => "welcome"
 
   root :to => "welcome#index"
   # The priority is based upon order of creation:
