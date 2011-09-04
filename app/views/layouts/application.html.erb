@@ -8,7 +8,24 @@
 </head>
 <body>
 
-<%= yield %>
+
+<header>
+  <nav id="account" >
+    Sign up or Log in
+  </nav>
+
+  <nav id="site" >
+    <ul>
+      <li><%= link_to "Welcome", welcome_path %></li>
+      <li><%= link_to "Items", items_path %></li>
+      <li><%= link_to "Scenes", scenes_path %></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="content" >
+  <%= yield %>
+</div>
 
 </body>
 </html>

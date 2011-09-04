@@ -3,7 +3,7 @@ Adventur::Application.routes.draw do
 
   resources :scenes
 
-  match "/welcome" => "welcome#index"
+  match "/welcome" => "welcome#index", :as => "welcome"
 
   root :to => "welcome#index"
   # The priority is based upon order of creation:
