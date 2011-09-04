@@ -1,8 +1,12 @@
 Adventur::Application.routes.draw do
+  
+
   resources :items
   resources :scenes
   resources :users
   resources :sessions
+
+  get "/profile" => "profile#index", :as => "profile"
 
   get "/sign_up" => "users#new",     :as => "sign_up"
   

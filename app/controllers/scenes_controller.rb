@@ -1,4 +1,7 @@
 class ScenesController < ApplicationController
+
+  before_filter :authorize
+
   # GET /scenes
   # GET /scenes.xml
   def index

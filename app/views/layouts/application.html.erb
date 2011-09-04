@@ -21,8 +21,11 @@
   <nav id="site" >
     <ul>
       <li><%= link_to "Welcome", welcome_path %></li>
-      <li><%= link_to "Items", items_path %></li>
-      <li><%= link_to "Scenes", scenes_path %></li>
+      <% if logged_in? %>
+        <li><%= link_to "Profile", profile_path %></li>
+        <li><%= link_to "Items", items_path %></li>
+        <li><%= link_to "Scenes", scenes_path %></li>
+      <% end %>
     </ul>
   </nav>
 </header>
