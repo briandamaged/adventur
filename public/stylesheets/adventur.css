@@ -16,8 +16,9 @@ header {
   background-color: #900;
   padding: 2px 2px 2px 2px;
   color: #fff;
+  
+  display: block;
 }
-
 
 
 
@@ -44,6 +45,7 @@ nav#site li {
   list-style-type: none;
   display: inline;
 }
+
 
 
 div#content {

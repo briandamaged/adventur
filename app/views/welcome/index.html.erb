@@ -1,2 +1,11 @@
-<h1>Welcome to Adventur!</h1>
-<p>Welcome ye travellers</p>
+<h1>Ye Olde Welcomme Page</h1>
+<p>You find yourself on the threshold of other worlds.  You see:</p>
+<ul>
+  <% if logged_in? %>
+    <li>Your <%= link_to "profile page", profile_path %></li>
+    <li>A <%= link_to "log out", log_out_path %> link</li>
+  <% else %>
+    <li>A <%= link_to "log in", log_in_path %> link</li>
+    <li>A <%= link_to "sign up", sign_up_path %> link</li>
+  <% end %>
+</ul>
