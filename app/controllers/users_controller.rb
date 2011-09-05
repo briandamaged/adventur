@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      redirect_to root_url, :notice => "Logged in"
+      redirect_to log_in_url, :notice => "Account created successfully."
     else
       @user.password = ""
       @user.password_confirmation = ""

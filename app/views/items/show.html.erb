@@ -1,13 +1,22 @@
 <p id="notice"><%= notice %></p>
 
+<section id="view" >
+  <%= image_tag @item.image.url(:examine) %>
+</section>
+
 <p>
   <b>Name:</b>
   <%= @item.name %>
 </p>
 
 <p>
-  <b>Description:</b>
   <%= @item.description %>
+</p>
+
+<h3>Notes</h3>
+
+<p>
+  <%= @item.notes %>
 </p>
 
 

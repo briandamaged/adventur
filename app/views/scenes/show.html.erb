@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<section id="scene" >
+<section id="view" >
   <%= image_tag @scene.image.url(:in_game) %>
 </section>
 
@@ -9,12 +9,14 @@
 </h1>
 
 <p>
-  <b>Description:</b>
   <%= @scene.description %>
 </p>
 
+<h3>Notes</h3>
 
-
+<p>
+  <%= @scene.notes %>
+</p>
 
 <%= link_to 'Edit', edit_scene_path(@scene) %> |
 <%= link_to 'Back', scenes_path %>
